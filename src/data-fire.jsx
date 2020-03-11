@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import db from './configFire.jsx';
+import './data-fire.css';
 
 // Creando componente que nos traiga la colección Menú Desayuno que tenemos en firebase
  export class BreakfastMenu extends Component {
@@ -27,7 +28,7 @@ import db from './configFire.jsx';
 
                 <div className="mt-4">
 
-                <button className="btn btn-danger btn-lg" >{item.nombre}{item.precio}</button>
+                <button id="comida" className="btn btn-danger btn-lg" >{item.nombre}{item.precio}</button>
 
             </div>
               </div>
